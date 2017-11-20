@@ -4,7 +4,7 @@
 
 ### Definition
 
-A **portmanteau** ([from Wiki](https://en.wikipedia.org/wiki/Portmanteau)) - (/pɔːrtˈmæntoʊ/, /ˌpɔːrtmænˈtoʊ/; plural portmanteaus or portmanteaux /-ˈtoʊz/[b]) or **portmanteau word** is a linguistic blend of words, in which parts of multiple words or their phones (sounds) are combined into a new word, as in _smog_, coined by blending _smoke_ and _fog_, or _motel_, from _motor_ and _hotel_. In linguistics, a portmanteau is defined as a single morph that represents two or more morphemes.
+A **portmanteau** ([from Wiki](https://en.wikipedia.org/wiki/Portmanteau)) - (_/pɔːrtˈmæntoʊ/_, _/ˌpɔːrtmænˈtoʊ/_; plural portmanteaus or portmanteaux _/-ˈtoʊz/_) or **portmanteau word** is a linguistic blend of words, in which parts of multiple words or their phones (sounds) are combined into a new word, as in _smog_, coined by blending _smoke_ and _fog_, or _motel_, from _motor_ and _hotel_. In linguistics, a portmanteau is defined as a single morph that represents two or more morphemes.
 
 ### Installation and usage
 ```lisp
