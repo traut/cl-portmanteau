@@ -7,7 +7,7 @@
 (defvar *min-word-size* 3)
 (defvar *margin* 2)
 
-(defun run-shifting-window (word size)
+(defun run-moving-window (word size)
   (loop for x from 0 to (- (length word) size)
         collect (subseq word x (+ x size))))
 
@@ -100,8 +100,8 @@
            (is-long-enough word-b))
     ; Walk down from window in 3 characters to 1 character
     (loop for win-size from max-win-size downto 1
-      do (let* ((blocks-a (run-shifting-window word-a win-size))
-                (blocks-b (run-shifting-window word-b win-size))
+      do (let* ((blocks-a (run-moving-window word-a win-size))
+                (blocks-b (run-moving-window word-b win-size))
                 (word-b-len (length word-b))
                 (matched-indices (find-matches blocks-a blocks-b word-b-len)))
            (loop for (idx-a idx-b) in matched-indices
