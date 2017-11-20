@@ -108,12 +108,10 @@
     (loop for win-size from max-win-size downto 1
       do (let* ((blocks-a (run-shifting-window word-a win-size))
                 (blocks-b (run-shifting-window word-b win-size))
-                (word-a-len (length word-a))
                 (word-b-len (length word-b))
                 (matched-indices (find-matches blocks-a blocks-b word-b-len)))
            (loop for (idx-a idx-b) in matched-indices
                  do (let* ((result (merge-words word-a idx-a word-b idx-b))
-                           (result-len (length result))
                            (is-valid (valid-result result word-a word-b)))
                       (vom:debug "result ~a, valid = ~a" result is-valid)
                       (if is-valid (return-from portmanteau result))))))
