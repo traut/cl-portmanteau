@@ -17,15 +17,9 @@
 
 
 (defun contains-vowel (word)
-  (find-if-not
-    'not
-    (loop for x from 0 below (length word)
-          collect (find (char word x) "aeiou" :test #'char-equal))))
-
-(defun calculate-expected-length (seq-a seq-b)
-  (cons
-    (+ (/ (length seq-a) 3) (/ (length seq-b) 3))
-    (+ (/ (length seq-a) 2) (/ (length seq-b) 2))))
+  (remove nil
+          (loop for x from 0 below (length word)
+                collect (find (char word x) "aeiou" :test #'char-equal))))
 
 
 (defun is-far-enough-from-start (idx elem)
