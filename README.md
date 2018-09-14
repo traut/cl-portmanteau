@@ -2,6 +2,8 @@
 
 *cl-portmanteau* is a library that makes a portmanteau of two words.
 
+![QuickLisp status](http://quickdocs.org/badge/cl-portmanteau.svg)
+
 ### Definition
 
 A **portmanteau** ([from Wiki](https://en.wikipedia.org/wiki/Portmanteau)) - (_/pɔːrtˈmæntoʊ/_, _/ˌpɔːrtmænˈtoʊ/_; plural portmanteaus or portmanteaux _/-ˈtoʊz/_) or **portmanteau word** is a linguistic blend of words, in which parts of multiple words or their phones (sounds) are combined into a new word, as in _smog_, coined by blending _smoke_ and _fog_, or _motel_, from _motor_ and _hotel_. In linguistics, a portmanteau is defined as a single morph that represents two or more morphemes.
@@ -18,7 +20,7 @@ CL-USER(3):
 ```
 
 ### CLI
-To run cl-portmanteau in CLI mode, you will need [Roswell](https://github.com/roswell/roswell) installed:
+To run cl-portmanteau in CLI mode you will need [Roswell](https://github.com/roswell/roswell) installed:
 
 ```bash
 cl-portmanteau $ ros ./run.ros mock documentary
